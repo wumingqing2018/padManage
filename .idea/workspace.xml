@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abca393f-2f31-47df-acc0-c3e27525acba" name="上线版本" comment="当前版本" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="7c1d53fd-fe78-474f-b865-b72abb4ef418" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="e6ca9700-3a49-4f82-bdee-f77b855530d3" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,8 +23,16 @@
   </component>
   <component name="ProjectId" id="1UjhHlRaPFCVKMZ57JYe6tZhlAg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowVersion Control.ShowToolbar" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -30,26 +40,16 @@
       <recent name="G:\CODE\padManage\padManage" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -57,7 +57,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="abca393f-2f31-47df-acc0-c3e27525acba" name="Default Changelist" comment="" />
+      <changelist id="e6ca9700-3a49-4f82-bdee-f77b855530d3" name="New changelist" comment="" />
       <created>1575875825993</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -125,5 +125,19 @@
     <MESSAGE value="New changelist" />
     <MESSAGE value="当前版本" />
     <option name="LAST_COMMIT_MESSAGE" value="当前版本" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="301" y="72" key="SettingsEditor" timestamp="1576031465387">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1576031465387" />
+    <state x="688" y="346" key="VCS.EditChangelistDialog" timestamp="1576031482530">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="688" y="346" key="VCS.EditChangelistDialog/0.0.1600.860@0.0.1600.860" timestamp="1576031482530" />
+    <state x="485" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1576031394030">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="485" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1576031394030" />
   </component>
 </project>
