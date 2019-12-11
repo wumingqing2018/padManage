@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c1d53fd-fe78-474f-b865-b72abb4ef418" name="默认的" comment="">
+    <list default="true" id="7c1d53fd-fe78-474f-b865-b72abb4ef418" name="master" comment="master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
     </list>
-    <list id="e6ca9700-3a49-4f82-bdee-f77b855530d3" name="New changelist" comment="" />
+    <list id="bb0938d9-d608-49dd-ab94-cffe6cbf16a9" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575970702329</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="master">
+      <created>1576031917976</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576031917976</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,21 +132,30 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New changelist" />
     <MESSAGE value="当前版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="当前版本" />
+    <MESSAGE value="master" />
+    <option name="LAST_COMMIT_MESSAGE" value="master" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="627" y="152" key="RollbackChangesDialog" timestamp="1576031897218">
+    <state x="475" y="23" key="CommitChangelistDialog2" timestamp="1576032294441">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="627" y="152" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1576031897218" />
+    <state x="475" y="23" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1576032294441" />
+    <state x="152" y="67" key="DiffContextDialog" timestamp="1576032270229">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="152" y="67" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1576032270229" />
+    <state x="627" y="152" key="RollbackChangesDialog" timestamp="1576032109191">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="627" y="152" key="RollbackChangesDialog/0.0.1600.860@0.0.1600.860" timestamp="1576032109191" />
     <state x="301" y="72" key="SettingsEditor" timestamp="1576031465387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1576031465387" />
-    <state x="688" y="346" key="VCS.EditChangelistDialog" timestamp="1576031482530">
+    <state x="688" y="346" key="VCS.EditChangelistDialog" timestamp="1576032365152">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="688" y="346" key="VCS.EditChangelistDialog/0.0.1600.860@0.0.1600.860" timestamp="1576031482530" />
+    <state x="688" y="346" key="VCS.EditChangelistDialog/0.0.1600.860@0.0.1600.860" timestamp="1576032365152" />
     <state x="485" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1576031394030">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
