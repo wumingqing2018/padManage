@@ -20,5 +20,5 @@ from padManage import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.allPad, ),
-    path('padLog/<int:id>', views.padLog, name='padLog')
+    path('padLog/<int:pad_id>', views.padLog, name='padLog')
 ]

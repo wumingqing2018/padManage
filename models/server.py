@@ -4,8 +4,12 @@ from models.models import Padlog
 def allPad():
     return Pingbanleibiao.objects.all()
 
-def logList(id):
-    return Padlog.objects.filter(padid=id)
+def logList(pad_id):
+    return Padlog.objects.filter(pad_id=pad_id)
 
-def padList(id):
-    return Pingbanleibiao.objects.filter(id=id)
+def padList(pad_id):
+    return Pingbanleibiao.objects.filter(pad_id=pad_id)
+
+def addpad(requeset):
+    return Pingbanleibiao.objects.create(pad_id=1)
+

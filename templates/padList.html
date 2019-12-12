@@ -18,12 +18,12 @@
     <tbody>
     {% for i in padList %}
     <tr>
-        <td width="100">{{i.pingpai}}</td>
-        <td width="100">{{i.xinghao}}</td>
-        <td width="100">{{i.riqi}}</td>
-        <td >{{i.laiyuan}}</td>
+        <td width="100">{{i.brand}}</td>
+        <td width="100">{{i.model}}</td>
+        <td width="100">{{i.time}}</td>
+        <td >{{i.source}}</td>
         <td >{{i.state}}</td>
-        <td><a href="{%url 'padLog' id=i.id%}">查看</a></td>
+        <td><a href="{%url 'padLog' pad_id=i.pad_id%}">查看</a></td>
     </tr>
     {% endfor %}
     </tbody>

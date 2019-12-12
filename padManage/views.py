@@ -7,7 +7,7 @@ def allPad(request):
     padList = server.allPad()
     return render(request, 'padList.html', {'padList': padList})
 
-def padLog(request, id):
-    padList = server.padList(id)
-    logList = server.logList(id)
+def padLog(request, pad_id):
+    padList = server.padList(pad_id)
+    logList = server.logList(pad_id)
     return render(request, 'logList.html', {'padList': padList, 'logList': logList})
