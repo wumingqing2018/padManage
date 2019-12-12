@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'qr_code',
     'models',
+    'uuid',
 ]
 
 MIDDLEWARE = [
