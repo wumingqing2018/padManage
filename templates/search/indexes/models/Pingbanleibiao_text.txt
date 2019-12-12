@@ -1,0 +1,8 @@
+{{object.pad_id}}
+{{object.brand}}
+{{object.model}}
+{{object.encode}}
+{{object.time}}
+{{object.source}}
+{{object.state}}
+{{object.remarks}}

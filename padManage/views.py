@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
+
 from models import server
 
 # Create your views here.
@@ -14,6 +16,8 @@ def padLog(request, pad_id):
 
 def addPad(request):
     if request.POST:
-        server.addpad(request)
+        addPad = server.addPad(request)
+        addlog = server.addLog(request, pad_id=addPad.pad_id)
+        return redirect(allPad)
     else:
         return render(request, 'addPad.html')

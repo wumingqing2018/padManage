@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
 from padManage import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.allPad, ),
     path('padLog/<int:pad_id>', views.padLog, name='padLog'),
-    path('addPad', views.addPad, name='addPad')
+    path('addPad', views.addPad, name='addPad'),
+    path('search', include('haystack.urls')),
 ]

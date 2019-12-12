@@ -6,7 +6,23 @@
 </head>
 <body>
 <form method="post" action="{% url 'addPad' %}">
-    <input type="text" name="1">
+    {% csrf_token %}
+    <br>
+    品牌  <input type="text" name="brand">
+    <br>
+    型号  <input type="text" name="model">
+    <br>
+    编码  <input type="text" name="encode">
+    <br>
+    日期  <input type="text" name="time">
+    <br>
+    来源  <input type="text" name="source">
+    <br>
+    状态  <input type="text" name="state">
+    <br>
+    备注  <input type="text" name="remarks">
+    <br>
+    提交  <input type="submit" value="submit">
 </form>
 </body>
 </html>

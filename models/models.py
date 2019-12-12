@@ -122,7 +122,7 @@ class Padlog(models.Model):
     log_id = models.AutoField(primary_key=True)
     pad_id = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
-    status = models.CharField(max_length=255)
+    state = models.CharField(max_length=255)
     time = models.CharField(max_length=255)
 
     class Meta:
