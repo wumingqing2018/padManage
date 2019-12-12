@@ -11,5 +11,5 @@ def padList(pad_id):
     return Pingbanleibiao.objects.filter(pad_id=pad_id)
 
 def addpad(requeset):
-    return Pingbanleibiao.objects.create(pad_id=1)
+    return Pingbanleibiao.objects.create(brand=requeset.POST[''])
 
