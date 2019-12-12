@@ -119,8 +119,8 @@ class DjangoSession(models.Model):
 
 
 class Padlog(models.Model):
-    id = models.CharField(primary_key=True, max_length=255)
-    padid = models.CharField(db_column='padId', max_length=255)  # Field name made lowercase.
+    log_id = models.AutoField(primary_key=True)
+    pad_id = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     status = models.CharField(max_length=255)
     time = models.CharField(max_length=255)
@@ -131,12 +131,12 @@ class Padlog(models.Model):
 
 
 class Pingbanleibiao(models.Model):
-    id = models.CharField(primary_key=True, max_length=255)
-    pingpai = models.CharField(db_column='PingPai', max_length=255)  # Field name made lowercase.
-    xinghao = models.CharField(db_column='XingHao', max_length=255)  # Field name made lowercase.
-    bianma = models.CharField(db_column='BianMa', max_length=255)  # Field name made lowercase.
-    riqi = models.CharField(db_column='RiQi', max_length=255)  # Field name made lowercase.
-    laiyuan = models.CharField(db_column='LaiYuan', max_length=255)  # Field name made lowercase.
+    pad_id = models.AutoField(primary_key=True)
+    brand = models.CharField(max_length=255)
+    model = models.CharField(max_length=255)
+    encode = models.CharField(max_length=255)
+    time = models.CharField(max_length=255)
+    source = models.CharField(max_length=255)
     state = models.CharField(max_length=255)
     remarks = models.CharField(max_length=255)
 

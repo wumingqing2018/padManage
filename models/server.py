@@ -1,17 +1,15 @@
 from models.models import Pingbanleibiao
 from models.models import Padlog
-import uuid
 
 def allPad():
     return Pingbanleibiao.objects.all()
 
-def logList(id):
-    return Padlog.objects.filter(padid=id)
+def logList(pad_id):
+    return Padlog.objects.filter(pad_id=pad_id)
 
-def padList(id):
-    return Pingbanleibiao.objects.filter(id=id)
+def padList(pad_id):
+    return Pingbanleibiao.objects.filter(pad_id=pad_id)
 
-def random_id():
-    res = str(uuid.uuid4())
-    res = res.replace('-', '')
-    return res[:16]
+def addpad(requeset):
+    return Pingbanleibiao.objects.create(brand=requeset.POST[''])
+

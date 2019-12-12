@@ -11,20 +11,20 @@
         <td width="100">品牌</td>
         <td width="100">型号</td>
         <td width="100">日期</td>
-        <td >来源</td>
-        <td >状态</td>
-        <td><a href="{%url 'addPad'%}">新建</a></td>
+        <td>来源</td>
+        <td>状态</td>
+        <td><a href="{% url 'addPad' %}">新建</a></td>
     </tr>
     </thead>
     <tbody>
-    {% for i in padList %}
+    {% for pad in padList %}
     <tr>
-        <td width="100">{{i.pingpai}}</td>
-        <td width="100">{{i.xinghao}}</td>
-        <td width="100">{{i.riqi}}</td>
-        <td >{{i.laiyuan}}</td>
-        <td >{{i.state}}</td>
-        <td><a href="{%url 'padLog' id=i.id%}">查看</a></td>
+        <td width="100">{{pad.brand}}</td>
+        <td width="100">{{pad.model}}</td>
+        <td width="100">{{pad.time}}</td>
+        <td>{{pad.source}}</td>
+        <td>{{pad.state}}</td>
+        <td><a href="{%url 'padLog' pad_id=pad.pad_id%}">查看</a></td>
     </tr>
     {% endfor %}
     </tbody>
