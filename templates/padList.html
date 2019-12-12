@@ -5,6 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+<form method='post' action="/search/" target="_blank">
+    {% csrf_token %}
+    <br>
+    <input type="text" name="q">
+    <input type="submit" value="查询">
+    <br>
+</form>
 <table>
     <thead>
     <tr>
