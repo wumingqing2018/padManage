@@ -21,12 +21,12 @@
     <tbody>
     {% for pad in padList %}
     <tr>
-        <td>{{pad.id}}</td>
-        <td>{{pad.pingpai}}</td>
-        <td>{{pad.xinghao}}</td>
-        <td>{{pad.bianma}}</td>
-        <td>{{pad.riqi}}</td>
-        <td>{{pad.laiyuan}}</td>
+        <td>{{pad.pad_id}}</td>
+        <td>{{pad.brand}}</td>
+        <td>{{pad.model}}</td>
+        <td>{{pad.encode}}</td>
+        <td>{{pad.time}}</td>
+        <td>{{pad.source}}</td>
         <td>{{pad.state}}</td>
         <td>{{pad.remarks}}</td>
     </tr>
@@ -45,7 +45,7 @@
     {% for log in logList %}
     <tr>
         <td>{{log.name}}</td>
-        <td>{{log.status}}</td>
+        <td>{{log.state}}</td>
         <td>{{log.time}}</td>
     </tr>
     {% endfor %}

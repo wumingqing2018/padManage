@@ -21,3 +21,10 @@ def addPad(request):
         return redirect(allPad)
     else:
         return render(request, 'addPad.html')
+
+def addLog(request, pad_id):
+    if request.POST:
+        addlog = server.addLog(request, pad_id=pad_id)
+        return redirect(padLog(pad_id))
+    else:
+        return render(request, 'addLog.html')
