@@ -21,7 +21,6 @@
     <tbody>
     {% for pad in padList %}
     <tr>
-        <td><a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a></td>
         <td>{{pad.pad_id}}</td>
         <td>{{pad.brand}}</td>
         <td>{{pad.model}}</td>
@@ -30,6 +29,8 @@
         <td>{{pad.source}}</td>
         <td>{{pad.state}}</td>
         <td>{{pad.remarks}}</td>
+        <td><a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a></td>
+
     </tr>
     {% endfor %}
     </tbody>
