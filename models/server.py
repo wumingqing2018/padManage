@@ -5,7 +5,7 @@ def allPad():
     return Pingbanleibiao.objects.all().order_by('-time')
 
 def logList(pad_id):
-    return Padlog.objects.filter(pad_id=pad_id)
+    return Padlog.objects.filter(pad_id=pad_id).order_by('-time')
 
 def padList(pad_id):
     return Pingbanleibiao.objects.filter(pad_id=pad_id)

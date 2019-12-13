@@ -18,8 +18,8 @@ from django.urls import path
 from padManage import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.allPad, ),
-    path('padLog/<int:id>', views.padLog, name='padLog'),
-    path('addLog', views.addLog, neme='addLog'),
+    # path('admin/', admin.site.urls),
+    # path('padLog/<int:pad_id>', views.padLog, name='padLog'),
+    # path('addPad/', views.addPad, name='addPad'),
+    # path('addLog/', views.addLog, neme='addLog'),
 ]
