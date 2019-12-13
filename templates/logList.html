@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>品牌</td>
+        <td>型号</td>
+        <td>编码</td>
+        <td>日期</td>
+        <td>来源</td>
+        <td>状态</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for pad in padList %}
+    <tr>
+        <td><a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a></td>
+        <td>{{pad.pad_id}}</td>
+        <td>{{pad.brand}}</td>
+        <td>{{pad.model}}</td>
+        <td>{{pad.encode}}</td>
+        <td>{{pad.time}}</td>
+        <td>{{pad.source}}</td>
+        <td>{{pad.state}}</td>
+        <td>{{pad.remarks}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<table>
+    <thead>
+    <tr>
+        <td>名字</td>
+        <td>状态</td>
+        <td>日期</td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for log in logList %}
+    <tr>
+        <td>{{log.name}}</td>
+        <td>{{log.state}}</td>
+        <td>{{log.time}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<table>
+    <thead>
+    <tr>
+        <td>二维码</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{% load qr_code %}</td>
+        <td>{% qr_from_text "Hello World!" size="L" %}</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

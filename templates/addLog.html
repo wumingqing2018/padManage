@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'addLog' pad_id=pad_id%}">
+    {% csrf_token %}
+    <br>
+    日期
+    <input type="text" name="time">
+    <br>
+    来源
+    <input type="text" name="name">
+    <br>
+    状态
+    <input type="text" name="state">
+    <br>
+    提交
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

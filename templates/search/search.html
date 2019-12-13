@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method='get' action="/search/" target="_blank">
+    {% csrf_token %}
+    <input type="text" name="q" value={{query}}>
+    <input type="submit" value="查询">
+</form>
+<table>
+    <thead>
+    <tr>
+        <td width="100">品牌</td>
+        <td width="100">型号</td>
+        <td width="100">日期</td>
+        <td>来源</td>
+        <td>状态</td>
+        <td><a href="{% url 'addPad' %}">新建</a></td>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in page %}
+    <tr>
+        <td width="100">{{item.object.brand}}</td>
+        <td width="100">{{item.object.model}}</td>
+        <td width="100">{{item.object.time}}</td>
+        <td>{{item.object.source}}</td>
+        <td>{{item.object.state}}</td>
+        <td><a href="{%url 'padLog' pad_id=item.object.pad_id%}">查看</a></td>
+    </tr>
+    {%empty%}
+        {啥玩意都没有}
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
