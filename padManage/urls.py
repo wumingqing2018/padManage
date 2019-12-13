@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.allPad, ),
     path('padLog/<int:pad_id>', views.padLog, name='padLog'),
-    path('addPad', views.addPad, name='addPad'),
-    path('search', include('haystack.urls')),
+    path('addPad/', views.addPad, name='addPad'),
+    path('search/', include('haystack.urls')),  # 导入haystack应用的urls.py
 ]

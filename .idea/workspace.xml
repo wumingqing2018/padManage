@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7c1d53fd-fe78-474f-b865-b72abb4ef418" name="master" comment="master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/padManage/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/padManage/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/padManage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/padManage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/padManage/whoosh_index/MAIN_vvhkr80o7kedd5u6.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/padManage/whoosh_index/_MAIN_1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/padManage/whoosh_index/_MAIN_1.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/padList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/padList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/haystack/backends/ChineseAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/haystack/backends/ChineseAnalyzer.py" afterDir="false" />
     </list>
     <list id="bb0938d9-d608-49dd-ab94-cffe6cbf16a9" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,9 +165,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="485" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1576132074691" />
-    <state x="456" y="83" width="670" height="676" key="search.everywhere.popup" timestamp="1576139116922">
+    <state x="456" y="83" width="670" height="676" key="search.everywhere.popup" timestamp="1576142663646">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="83" width="670" height="676" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1576139116922" />
+    <state x="456" y="83" width="670" height="676" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1576142663646" />
   </component>
 </project>
