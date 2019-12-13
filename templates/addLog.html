@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form method="post" action="{% url 'addLog' %}">
+<form method="post" action="{% url 'addLog' pad_id=pad_id%}">
     {% csrf_token %}
     <br>
     日期

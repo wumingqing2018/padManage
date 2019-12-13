@@ -24,7 +24,7 @@ def addPad(request):
 
 def addLog(request, pad_id):
     if request.POST:
-        addlog = server.addLog(request, )
-        return redirect(padLog(request,))
+        addlog = server.addLog(request, pad_id)
+        return redirect('padLog', pad_id=pad_id)
     else:
         return render(request, 'addLog.html', {'pad_id': pad_id})

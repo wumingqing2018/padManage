@@ -21,6 +21,6 @@ def addPad(requeset):
 
 def addLog(requeset, pad_id):
     return Padlog.objects.create(pad_id=pad_id,
-                                 name=requeset.POST['source'],
+                                 name=requeset.POST['name'],
                                  state=requeset.POST['state'],
                                  time=requeset.POST['time'],)

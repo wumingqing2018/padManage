@@ -4,11 +4,9 @@
     <list default="true" id="7c1d53fd-fe78-474f-b865-b72abb4ef418" name="master" comment="master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padManage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/padManage/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/padManage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/padManage/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/addLog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/addLog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/logList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/logList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/haystack/backends/ChineseAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/haystack/backends/ChineseAnalyzer.py" afterDir="false" />
     </list>
     <list id="bb0938d9-d608-49dd-ab94-cffe6cbf16a9" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
