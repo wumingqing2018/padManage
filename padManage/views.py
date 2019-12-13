@@ -16,12 +16,6 @@ def padLog(request, pad_id):
 
 def addPad(request):
     if request.POST:
-<<<<<<< HEAD
-        server.addpad(request)
-    else:
-        return render(request, 'addPad.html')
-=======
-        addPad = server.addPad(request)
         addlog = server.addLog(request, pad_id=addPad.pad_id)
         return redirect(allPad)
     else:
@@ -33,4 +27,3 @@ def addLog(request, pad_id):
         return redirect('padLog', pad_id=pad_id)
     else:
         return render(request, 'addLog.html', {'pad_id': pad_id})
->>>>>>> 1.12
