@@ -28,3 +28,6 @@ def addLog(request, pad_id):
         return redirect('padLog', pad_id=pad_id)
     else:
         return render(request, 'addLog.html', {'pad_id': pad_id})
+
+def qrCode(request, pad_id):
+    return 1

@@ -24,5 +24,6 @@ urlpatterns = [
     path('padLog/<int:pad_id>', views.padLog, name='padLog'),
     path('addPad/', views.addPad, name='addPad'),
     path('addLog/<int:pad_id>', views.addLog, name='addLog'),
+    path('qrCode/<int:pad_id>', views.qrCode, name='qrCode'),
     path('search/', include('haystack.urls')),  # 导入haystack应用的urls.py
 ]

@@ -8,7 +8,6 @@
 <table>
     <thead>
     <tr>
-        <td>ID</td>
         <td>品牌</td>
         <td>型号</td>
         <td>编码</td>
@@ -19,10 +18,8 @@
     </tr>
     </thead>
     <tbody>
-    {{padList}}
     {% for pad in padList %}
     <tr>
-        <td>{{pad.pad_id}}</td>
         <td>{{pad.brand}}</td>
         <td>{{pad.model}}</td>
         <td>{{pad.encode}}</td>
@@ -30,7 +27,10 @@
         <td>{{pad.source}}</td>
         <td>{{pad.state}}</td>
         <td>{{pad.remarks}}</td>
-        <td><a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a></td>
+    </tr>
+    <tr>
+        <td width="100"><a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a></td>
+        <td width="100"><a href="{% url 'qrCode' pad_id=pad.pad_id %}">下载二维码</a></td>
     </tr>
     {% endfor %}
     </tbody>
@@ -38,17 +38,17 @@
 <table>
     <thead>
     <tr>
-        <td>名字</td>
-        <td>状态</td>
-        <td>日期</td>
-        </tr>
+        <td width="100">状态</td>
+        <td width="100">日期</td>
+        <td width="100">名字</td>
+    </tr>
     </thead>
     <tbody>
     {% for log in logList %}
     <tr>
+        <td width="100">{{log.state}}</td>
+        <td width="100">{{log.time}}</td>
         <td>{{log.name}}</td>
-        <td>{{log.state}}</td>
-        <td>{{log.time}}</td>
     </tr>
     {% endfor %}
     </tbody>
