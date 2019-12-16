@@ -29,8 +29,12 @@
         <td>{{pad.remarks}}</td>
     </tr>
     <tr>
-        <td width="100"><a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a></td>
-        <td width="100"><a href="{% url 'qrCode' pad_id=pad.pad_id %}">下载二维码</a></td>
+        <td width="100">
+            <a href="{% url 'addLog' pad_id=pad.pad_id %}">新建日志</a>
+        </td>
+        <td width="100">
+            <a href="{% url 'qrCode' pad_id=pad.pad_id %}">下载二维码</a>
+        </td>
     </tr>
     {% endfor %}
     </tbody>

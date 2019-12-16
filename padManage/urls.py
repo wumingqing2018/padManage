@@ -8,9 +8,9 @@ Function views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
 Class-based views
     1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+    2. Add a URL to urlpatterns:  path('', Home.as_view, name='home')
 Including another URLconf
-    1. Import the include() function: from django.urls import include, path
+    1. Import the include function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
@@ -20,10 +20,10 @@ from padManage import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.allPad, ),
-    path('padLog/<int:pad_id>', views.padLog, name='padLog'),
-    path('addPad/', views.addPad, name='addPad'),
-    path('addLog/<int:pad_id>', views.addLog, name='addLog'),
-    path('qrCode/<int:pad_id>', views.qrCode, name='qrCode'),
+    path('', views.all_pad, ),
+    path('padLog/<int:pad_id>', views.pad_log, name='padLog'),
+    path('addPad/', views.add_pad, name='addPad'),
+    path('addLog/<int:pad_id>', views.add_log, name='addLog'),
+    path('qrCode/<int:pad_id>', views.download_qrcode, name='qrCode'),
     path('search/', include('haystack.urls')),  # 导入haystack应用的urls.py
 ]
