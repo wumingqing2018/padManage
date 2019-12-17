@@ -16,14 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
-from padManage import views
+from backEnd import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.all_pad, ),
-    path('padLog/<int:pad_id>', views.pad_log, name='padLog'),
-    path('addPad/', views.add_pad, name='addPad'),
-    path('addLog/<int:pad_id>', views.add_log, name='addLog'),
-    path('qrCode/<int:pad_id>', views.download_qrcode, name='qrCode'),
     path('search/', include('haystack.urls')),  # 导入haystack应用的urls.py
+    path('', include('backEnd.urls')),  # 导入backEnd应用的urls.py
 ]

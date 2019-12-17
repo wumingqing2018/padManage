@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from padManage import views
+from django.urls import include
+from backEnd import views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
-    # path('padLog/<int:pad_id>', views.padLog, name='padLog'),
-    # path('addPad/', views.addPad, name='addPad'),
-    # path('addLog/', views.addLog, neme='addLog'),
+    path('', views.all_pad, ),
+    path('padLog/<int:pad_id>', views.pad_log, name='padLog'),
+    path('addPad/', views.add_pad, name='addPad'),
+    path('addLog/<int:pad_id>', views.add_log, name='addLog'),
+    path('qrCode/<int:pad_id>', views.download_qrcode, name='qrCode'),
 ]

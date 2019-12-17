@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'haystack',
     'qr_code',
-    'models',
+    'backEnd',
 ]
 
 MIDDLEWARE = [

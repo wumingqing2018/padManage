@@ -1,5 +1,5 @@
-from models.models import Pingbanleibiao
-from models.models import Padlog
+from backEnd.models import Pingbanleibiao
+from backEnd.models import Padlog
 
 def all_pad():
     return Pingbanleibiao.objects.all().order_by('-time')
