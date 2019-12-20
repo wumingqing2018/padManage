@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.shortcuts import HttpResponse
+from django.utils.six import BytesIO
 
 from backEnd import server
 
@@ -20,7 +21,6 @@ def pad_log(request, pad_id):
 def add_pad(request):
     if request.POST:
         addPad = server.add_pad(request)
-        addlog = server.add_log(request, pad_id=addPad.pad_id)
         return redirect(all_pad)
     else:
         return render(request, 'addPad.html')
@@ -37,6 +37,7 @@ def download_qrcode(request, pad_id):
     url = 'http://127.0.0.1:8000/padLog/' + pad_id
     picture_name = 'picture/' + pad_id + '.png'
     img = qrcode.make(url)
+    buf = BytesIO()
     with open(picture_name, 'wb')as f:
         img.save(f)
-    return HttpResponse(url)
+    return HttpResponse(img, content_type='image/png')

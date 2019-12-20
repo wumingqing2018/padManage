@@ -4,5 +4,7 @@
 {{object.encode}}
 {{object.time}}
 {{object.source}}
-{{object.state}}
 {{object.remarks}}
+{{object.state}}
+{{object.name}}
+{{object.loan_time}}
