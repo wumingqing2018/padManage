@@ -16,8 +16,9 @@
         <td width="100">品牌</td>
         <td width="100">型号</td>
         <td width="100">日期</td>
-        <td>来源</td>
-        <td>状态</td>
+        <td width="150">借出或归回状态</td>
+        <td width="150">借出或归还姓名</td>
+        <td width="150">借出或归还时间</td>
         <td><a href="{% url 'addPad' %}">新建</a></td>
     </tr>
     </thead>
@@ -27,8 +28,9 @@
         <td width="100">{{item.object.brand}}</td>
         <td width="100">{{item.object.model}}</td>
         <td width="100">{{item.object.time}}</td>
-        <td>{{item.object.source}}</td>
-        <td>{{item.object.state}}</td>
+        <td width="100">{{item.object.use_state}}</td>
+        <td width="100">{{item.object.use_name}}</td>
+        <td width="100">{{item.object.use_time}}</td>
         <td><a href="{%url 'padLog' pad_id=item.object.pad_id%}">查看</a></td>
     </tr>
     {%empty%}

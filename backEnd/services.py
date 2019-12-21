@@ -16,13 +16,11 @@ def add_pad(requeset):
                                          encode=requeset.POST['encode'],
                                          time=requeset.POST['time'],
                                          source=requeset.POST['source'],
-                                         remarks=requeset.POST['remarks'],
-                                         use_state='入库',
-                                         use_name=requeset.POST['source'],
-                                         use_time=requeset.POST['time'],)
+                                         remarks=requeset.POST['remarks'],)
+
 
 def add_log(requeset, pad_id):
-    pad = Pingbanleibiao.objects.get(pad_id=pad_id)
+    pad=Pingbanleibiao.objects.get(pad_id=pad_id)
     pad.use_name = requeset.POST['name']
     pad.use_state = requeset.POST['state']
     pad.use_time = requeset.POST['time']

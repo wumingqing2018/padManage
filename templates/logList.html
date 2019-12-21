@@ -59,18 +59,8 @@
     {% endfor %}
     </tbody>
 </table>
-<table>
-    <thead>
-    <tr>
-        <td width="100">二维码</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td width="100">{% load qr_code %}</td>
-        <td width="100">{% qr_from_text "Hello World!" size="L" %}</td>
-    </tr>
-    </tbody>
-</table>
+<p>二维码</p>
+{% load qr_code %}
+{% qr_from_text url size="M" %}
 </body>
 </html>
