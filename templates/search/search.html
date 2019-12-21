@@ -13,9 +13,9 @@
 <table>
     <thead>
     <tr>
-        <td width="100">品牌</td>
-        <td width="100">型号</td>
-        <td width="100">日期</td>
+        <td width="150">品牌</td>
+        <td width="150">型号</td>
+        <td width="150">日期</td>
         <td width="150">借出或归回状态</td>
         <td width="150">借出或归还姓名</td>
         <td width="150">借出或归还时间</td>
@@ -25,12 +25,12 @@
     <tbody>
     {% for item in page %}
     <tr>
-        <td width="100">{{item.object.brand}}</td>
-        <td width="100">{{item.object.model}}</td>
-        <td width="100">{{item.object.time}}</td>
-        <td width="100">{{item.object.use_state}}</td>
-        <td width="100">{{item.object.use_name}}</td>
-        <td width="100">{{item.object.use_time}}</td>
+        <td width="150">{{item.object.brand}}</td>
+        <td width="150">{{item.object.model}}</td>
+        <td width="150">{{item.object.time}}</td>
+        <td width="150">{{item.object.use_state}}</td>
+        <td width="150">{{item.object.use_name}}</td>
+        <td width="150">{{item.object.use_time}}</td>
         <td><a href="{%url 'padLog' pad_id=item.object.pad_id%}">查看</a></td>
     </tr>
     {%empty%}
